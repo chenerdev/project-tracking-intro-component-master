@@ -40,12 +40,11 @@ header img {
 
 .heroimg {
   background: var(--Light-Grayish-Blue);
-  /* border: 2px solid red; */
-  height: 400px;
+  height: 410px;
   width: 55%;
   position: relative;
   right: -50%;
-  top: -55px;
+  top: -80px;
   border-radius: 0 0 0 50px;
 }
 
@@ -60,7 +59,6 @@ header img {
   margin: 0 auto;
   text-align: left;
   font-family: var(--Barlow-Condensed);
-  /* border: 2px solid red; */
 }
 
 .herotext span {
@@ -85,7 +83,7 @@ header img {
   margin: 15px 0;
   width: 100%;
   text-transform: uppercase;
-  font-size: clamp(40px, 4vw, 60px);
+  font-size: clamp(40px, 4vw, 66px);
 }
 
 .herotext p {
@@ -108,8 +106,8 @@ header img {
   border: none;
   background-color: var(--Red);
   color: var(--Light-Grayish-Blue);
-  width: 150px;
-  height: 40px;
+  width: 170px;
+  height: 50px;
   font-family: var(--Barlow-Condensed);
   font-size: 0.7em;
   padding: 0 10px;
@@ -169,7 +167,6 @@ footer {
   cursor: pointer;
 
   /* border: 3px solid red; */
-
 }
 
 .Login {
@@ -186,13 +183,16 @@ footer {
 }
 
 @media only screen and (min-width: 1080px) {
-  main {
-    /* display: flex; */
-  }
 
   .mobilepopupopen,
   .mobilepopupclose {
     display: none;
+  }
+
+  .header img {
+    margin-left: 5%;
+    margin-top: 4%;
+    width: 30px;
   }
 
   .mobilepopup {
@@ -203,14 +203,14 @@ footer {
     align-items: center;
     justify-content: center;
     width: 40%;
-    /* border: 5px solid; */
-    /* position: unset; */
     font-size: 1.1em;
-    height: 130px;
+    height: 150px;
     top: 0;
     right: 40px;
     left: unset;
     z-index: 999;
+   font-family: var(--Barlow-Condensed);
+
   }
 
   .Login {
@@ -231,30 +231,29 @@ footer {
 
   .heroimg {
     padding: unset;
-    /* display: none; */
-    /* position: unset; */
   }
 
   .heroimg img {
     width: 65vw;
-  transform: translate(45px, 170px);
+    transform: translate(45px, 200px);
   }
 
-.herotext {
-  width: 35%;
-  margin: 0 0 0 8%;
-  /* border: 3px solid; */
-  transform: translateY(-200px);
-  /* border: solid 5px; */
-}
+  .herotext {
+    width: 36%;
+    margin: 0 0 0 11%;
+    transform: translateY(-200px);
+  }
 
   .herotext p {
-  padding-right: 230px;
-  margin: 20px 0 40px 0;
+    padding-right: 230px;
+    margin: 20px 0 40px 0;
   }
 
   .herotextbtn button {
     margin-right: 25px;
   }
 
+  .mobilepopup li {
+    font-weight: normal;
+  }
 }
