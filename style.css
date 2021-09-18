@@ -96,7 +96,7 @@ header img {
   text-transform: uppercase;
   color: var(--Grayish-Blue);
   font-family: var(--Barlow);
-  font-size: clamp(17px, 4vw, 23px);
+  font-size: clamp(15px, 4vw, 23px);
   word-spacing: 3px;
   margin: 40px 0;
 }
