@@ -16,8 +16,7 @@
 
 html,
 body {
-  overflow: hidden;
-  /* border: solid 3px; */
+  overflow-x: hidden;
   font-family: var(--Barlow);
 }
 
@@ -83,12 +82,12 @@ header img {
   margin: 15px 0;
   width: 100%;
   text-transform: uppercase;
-  font-size: clamp(40px, 4vw, 66px);
+  font-size: clamp(30px, 4vw, 66px);
 }
 
 .herotext p {
   color: var(--Dark-Grayish-Blue);
-  font-size: clamp(21px, 4vw, 25px);
+  font-size: clamp(15px, 4vw, 25px);
 }
 
 .herotextbtn {
@@ -97,7 +96,7 @@ header img {
   text-transform: uppercase;
   color: var(--Grayish-Blue);
   font-family: var(--Barlow);
-  font-size: clamp(20px, 4vw, 23px);
+  font-size: clamp(17px, 4vw, 23px);
   word-spacing: 3px;
   margin: 40px 0;
 }
@@ -141,7 +140,6 @@ footer {
   text-align: center;
   font-size: 1.3em;
   transition: all 0.5s ease-in-out;
-  /* border: 3px solid red; */
 }
 
 .popon {
@@ -165,8 +163,6 @@ footer {
   text-transform: uppercase;
   width: 90%;
   cursor: pointer;
-
-  /* border: 3px solid red; */
 }
 
 .Login {
@@ -183,10 +179,17 @@ footer {
 }
 
 @media only screen and (min-width: 1080px) {
+  html,
+  body {
+    overflow: hidden;
+  }
 
+  .mobilepopupclose,
   .mobilepopupopen,
-  .mobilepopupclose {
+  .openmoves,
+  .closemove {
     display: none;
+    opacity: 0;
   }
 
   .header img {
@@ -209,12 +212,11 @@ footer {
     right: 40px;
     left: unset;
     z-index: 999;
-   font-family: var(--Barlow-Condensed);
-
+    font-family: var(--Barlow-Condensed);
   }
 
   .Login {
-    borderl: unset;
+    border: unset;
     padding: 0;
     color: var(--Dark-Grayish-Blue);
     position: relative;
