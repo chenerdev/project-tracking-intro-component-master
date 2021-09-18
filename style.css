@@ -50,7 +50,6 @@ header img {
 .heroimg img {
   width: 500px;
   transform: translate(-185px, 110px);
-  cursor: pointer;
 }
 
 .herotext {
